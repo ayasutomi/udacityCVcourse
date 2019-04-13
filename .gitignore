@@ -1,0 +1,4 @@
+# ignore DockerFile
+Dockerfile
+.vscode
+imgs

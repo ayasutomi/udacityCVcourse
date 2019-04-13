@@ -1,0 +1,13 @@
+import cv2
+
+img = cv2.imread('imgs/watch.jpg')
+cv2.imshow('watch',img)
+
+f_size = 21
+f_sigma = 5
+
+smoothed = cv2.GaussianBlur(img,(f_size,f_size),f_sigma, f_sigma, borderType = cv2.BORDER_CONSTANT)
+cv2.imshow('smoothed', smoothed)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
